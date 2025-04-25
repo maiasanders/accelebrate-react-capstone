@@ -34,7 +34,6 @@ function App() {
               <Route path='/orderhistory' element={<OrderHistoryPage />} />
               <Route path='/order/:id/details' element={<OrderDetails />} />
             </Routes>
-
           </Suspense>
         </CartDispatchContext.Provider>
       </CartContext.Provider>

@@ -15,8 +15,8 @@ export interface Order {
     pickuptime: string | null,
     area: string,
     location?: string,
-    tax?: number,
-    tip?: number,
+    tax: number,
+    tip: number,
     pan: string,
     expiryMonth: number,
     expiryYear: number;

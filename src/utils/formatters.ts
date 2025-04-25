@@ -11,3 +11,5 @@ export const formatTime = (date: Date | string) => {
     if (typeof date === 'string') date = new Date(date)
     return date.toLocaleTimeString("en-US", { hour: "numeric", minute: "numeric" })
 }
+
+export const calculateTax = (tax: number, subtotal: number) => (tax / 100) * subtotal;

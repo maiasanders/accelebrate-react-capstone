@@ -22,7 +22,9 @@ const CartPage = () => {
                     <th></th>
                 </tr>
             </thead>
-            {cartItems.map(i => (<CartItemComponent item={i} key={i.itemid} />))}
+            <tbody>
+                {cartItems.map(i => (<CartItemComponent item={i} key={i.itemid} />))}
+            </tbody>
             <tfoot>
                 <tr>
                     <th scope="row" rowSpan={3}>Total</th>
