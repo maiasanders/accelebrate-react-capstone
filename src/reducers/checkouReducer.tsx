@@ -5,7 +5,6 @@ export type Action =
     | { type: 'pan', pan: string }
     | { type: 'expiryMonth', month: number }
     | { type: 'expiryYear', year: number }
-    | { type: 'cvv', cvv: string }
     | { type: "location", location: string }
     | { type: 'area', area: string }
     | { type: 'tip', tip: number }
@@ -19,9 +18,6 @@ const checkoutReducer = (state: CheckoutFields, action: Action) => {
         }
         case 'expiryYear': {
             return { ...state, expiryYear: action.year }
-        }
-        case 'cvv': {
-            return { ...state, cvv: action.cvv }
         }
         case 'location': {
             return { ...state, location: action.location }

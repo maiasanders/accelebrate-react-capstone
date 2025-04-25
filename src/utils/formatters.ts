@@ -13,3 +13,10 @@ export const formatTime = (date: Date | string) => {
 }
 
 export const calculateTax = (tax: number, subtotal: number) => (tax / 100) * subtotal;
+
+export const formatDateForApi = (date: Date) => {
+    let str = date.toISOString()
+    str.slice(str.indexOf('.'))
+    str += ".000+00:00"
+    return str
+}
