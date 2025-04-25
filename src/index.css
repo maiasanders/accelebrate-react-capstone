@@ -2,24 +2,68 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--color-tea-green-50);
+  background-color: var(--color-thunder-950);
+  border-color: var(--color-tea-green-200);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* COLORS */
+  --color-thunder-50: #f9f4f9;
+  --color-thunder-100: #f3ecf2;
+  --color-thunder-200: #e9dce9;
+  --color-thunder-300: #dbc6da;
+  --color-thunder-400: #cbaec7;
+  --color-thunder-500: #bb99b4;
+  --color-thunder-600: #a9829e;
+  --color-thunder-700: #936f87;
+  --color-thunder-800: #775c70;
+  --color-thunder-900: rgb(98, 77, 92);
+  --color-thunder-950: #31272e;
+
+  --color-tea-green-50: #f2faeb;
+  --color-tea-green-100: #dbf0c7;
+  --color-tea-green-200: #c9e9ad;
+  --color-tea-green-300: #a6d97d;
+  --color-tea-green-400: #86c754;
+  --color-tea-green-500: #67ac36;
+  --color-tea-green-600: #4e8927;
+  --color-tea-green-700: #3d6922;
+  --color-tea-green-800: #335420;
+  --color-tea-green-900: #2d481f;
+  --color-tea-green-950: #15270c;
+}
+
+main {
+  padding: 2rem;
+}
+
+img {
+  object-fit: cover;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--color-tea-green-100);
   text-decoration: inherit;
+  /* transition: font-weight .2s, color .2s; */
+
+  &:hover {
+    color: var(--color-tea-green-400);
+    text-decoration: underline;
+  }
 }
-a:hover {
-  color: #535bf2;
+
+a.active {
+  color: var(--color-tea-green-400);
+  /* text-decoration: underline; */
+  font-weight: bold;
 }
 
 body {
@@ -28,6 +72,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 h1 {
@@ -42,13 +95,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--color-tea-green-500);
   cursor: pointer;
   transition: border-color 0.25s;
+
+  &:hover {
+    background-color: var(--color-tea-green-400);
+    border-color: var(--color-tea-green-200);
+  }
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,10 +115,20 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
 }

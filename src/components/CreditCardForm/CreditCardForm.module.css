@@ -1,0 +1,8 @@
+#cvv {
+    width: 4rem;
+}
+
+#expiryMonth,
+#expiryYear {
+    width: 2rem;
+}

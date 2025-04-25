@@ -1,5 +1,27 @@
 .menuItemCard {
     width: 30rem;
+    border: 1px solid;
+    border-radius: .2rem;
+    padding: 1rem;
+    background-color: rgb(from var(--color-thunder-900) r g b / 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0 0 1rem black);
+
+    &:hover {
+        background-color: rgb(from var(--color-thunder-900) r g b / 80%);
+    }
+}
+
+.menuItemCard img {
+    max-width: 80%;
+    aspect-ratio: 1 / 1;
+    border-radius: .2rem;
+}
+
+.menuItemCard h3 {
+    margin-top: auto;
 }
 
 /* TODO add card styling */

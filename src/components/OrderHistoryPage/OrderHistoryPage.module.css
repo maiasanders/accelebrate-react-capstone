@@ -1,0 +1,8 @@
+#orderHistory ul {
+    justify-self: center;
+}
+
+.orderItem a {
+    display: flex;
+    gap: 2rem;
+}

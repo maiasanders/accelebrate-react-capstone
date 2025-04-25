@@ -1,0 +1,12 @@
+.cartItemComp td,
+th {
+    padding: .4rem 0;
+}
+
+.cartItemComp button {
+    padding: .3rem .5rem;
+}
+
+.cartItemComp input {
+    width: 2rem;
+}

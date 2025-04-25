@@ -1,0 +1,15 @@
+#cartPage {
+    justify-items: center
+}
+
+#cartPage table {
+    width: 70%;
+}
+
+#cartPage thead {
+    background-color: var(--color-thunder-800);
+}
+
+button.checkout {
+    margin: 2rem;
+}

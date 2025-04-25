@@ -1,0 +1,15 @@
+#header {
+    background-color: var(--color-thunder-700);
+    background: linear-gradient(30deg, var(--color-thunder-700), var(--color-thunder-600));
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-thunder-400);
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+}

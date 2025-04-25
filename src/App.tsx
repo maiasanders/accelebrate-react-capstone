@@ -7,6 +7,8 @@ import cartReducer from './reducers/cartReducer'
 import CartContext from './context/CartContext'
 import CartDispatchContext from './context/CartDispatchContext'
 import CartPage from './components/CartPage/CartPage'
+import OrderHistoryPage from './components/OrderHistoryPage/OrderHistoryPage'
+import OrderDetails from './components/OrderDetails/OrderDetails'
 
 function App() {
   const [cart, dispatch] = useReducer(cartReducer, [])
@@ -18,6 +20,8 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/checkout' element={<CartPage />} />
+          <Route path='/orderhistory' element={<OrderHistoryPage />} />
+          <Route path='/order/:id/details' element={<OrderDetails />} />
         </Routes>
       </CartDispatchContext.Provider>
     </CartContext.Provider>

@@ -1,0 +1,33 @@
+#orderDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "order-num order-num"
+        "date order-time"
+        ". pickup"
+        "table table";
+}
+
+#orderNum {
+    grid-area: order-num;
+}
+
+#date {
+    grid-area: date;
+}
+
+#orderTime {
+    grid-area: order-time;
+}
+
+#pickup {
+    grid-area: pickup;
+}
+
+#orderDetails table {
+    grid-area: table;
+    width: 70%;
+}
+
+tfoot tr.receiptTotals:nth-child(even) {
+    background-color: var(--color-thunder-800) !important;
+}
