@@ -1,0 +1,16 @@
+meta {
+  name: User Login
+  type: http
+  seq: 3
+}
+
+post {
+  url: localhost:9000/login
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: me
+  password: pass
+}

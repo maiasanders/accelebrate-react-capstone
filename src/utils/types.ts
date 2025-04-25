@@ -9,16 +9,16 @@ export interface MenuItem {
 }
 
 export interface Order {
-    id: number;
-    userId?: number;
-    ordertime: string | null;
-    pickuptime: string | null;
-    area: string;
-    location: string;
-    tax: number;
-    tip: number;
-    pan: string;
-    exipryMonth?: number;
+    id: number,
+    userid?: number,
+    ordertime: string | null,
+    pickuptime: string | null,
+    area: string,
+    location?: string,
+    tax?: number,
+    tip?: number,
+    pan: string,
+    expiryMonth: number,
     expiryYear: number;
     status: string;
 }

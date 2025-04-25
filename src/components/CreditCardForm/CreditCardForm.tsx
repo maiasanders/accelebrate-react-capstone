@@ -1,5 +1,8 @@
 import { SubmitHandler, useForm } from "react-hook-form"
 import styles from './CreditCardForm.module.css'
+import { useContext } from "react";
+import CartContext from "../../context/CartContext";
+import { Order } from "../../utils/types";
 
 interface CreditCardFormInput {
     pan: string;
@@ -9,8 +12,16 @@ interface CreditCardFormInput {
 }
 
 const CreditCardForm = () => {
+
+    const cartItems = useContext(CartContext)
+
     const { register, handleSubmit } = useForm<CreditCardFormInput>()
-    const onSubmit: SubmitHandler<CreditCardFormInput> = (data) => console.log(data) // TODO add handling to add order to database
+    const onSubmit: SubmitHandler<CreditCardFormInput> = (data) => {
+        const order: Order = {
+            ordertime: Date.now.toString(),
+            area:
+        }
+    } // TODO add handling to add order to database
 
     // TODO add form validation
 

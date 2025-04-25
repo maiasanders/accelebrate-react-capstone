@@ -1,0 +1,31 @@
+meta {
+  name: Update Users as Admin
+  type: http
+  seq: 7
+}
+
+put {
+  url: localhost:8180/api/users/3
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlcyI6IlJPTEVfQURNSU4iLCJzY29wZSI6IlJPTEVfQURNSU4iLCJhdXRob3JpdGllcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9BRE1JTiJ9XX0.DAonkfxkRcUpXhNBIJpyiH_0PcQSQ8bS6Z8c6B3jpfMchXQbHOstTLC3FNK8oB8PGHA6_3nCnEMxJuyKtcEH-c3sGTrlyJjEjGR0ppG19BeM3RseDlnGxoBOg9DIK21UikCa3sHPkZyK4a71W_5gb6nbQfDkQtGfASv1rXQf2-_CvJCY-XdyXHgwGamWBruuXiZt0ioE6xt9yeWYmQamPQy7EmCufhab0EkUaeJvFcX32Q1FGaeE_Uq1rHXo-KxJom_iKXIVR0-JDTcsFyrJqbSn1JeQwqYp15SPeSpHBKEWXi_yyx4ln81OZT8KHImU31k_aihjE3qzldnKaWJAPA
+}
+
+body:json {
+  {
+          "username": "me",
+          "password": "$2a$12$sPUi2kLGlu.YcCV9cfnE.uzJiPOR/G1sRHZcwV3agV9ScZReaY3VO",
+          "first": "Test",
+          "last": "User",
+          "phone": "(555) 853-1039",
+          "email": "testUser@daam.com",
+          "imageUrl": "https://minimaltoolkit.com/images/randomdata/female/7.jpg",
+          "pan": "4332-1234-1234-1234",
+          "expiryMonth": 6,
+          "expiryYear": 2025,
+          "roles": "USER"
+      }
+}

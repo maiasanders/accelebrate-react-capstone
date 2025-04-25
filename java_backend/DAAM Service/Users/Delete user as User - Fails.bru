@@ -1,0 +1,15 @@
+meta {
+  name: Delete user as User - Fails
+  type: http
+  seq: 9
+}
+
+delete {
+  url: localhost:8180/api/users/6
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZSIsInVzZXJuYW1lIjoibWUiLCJyb2xlcyI6IlJPTEVfVVNFUiIsInNjb3BlIjoiUk9MRV9VU0VSIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XX0.L149W9uWKBUeQBi0CEGlYyNTIWTqKROQXw4lYZie-pHk0XDOtWcY_jQvjhF60Htb--o7OYCS3aPOrj3vL_FdVFNSZXg9wmiIS9KJr-UZGbSQP0s9NSZWkrTcDoyFW7hEfdkKw56FM4iPxQdeoxJOweHOFEoP1gXgijbP8c2xir_-RHW9lEkv9kNQjgFd65CigBvjc6ijcTIMQt57svncloMsWKU-9BDETI8NTx5r6LKsO4xkh-IWuno-2z1-mUFx6liTxl7tFmFHjpPFcdH3MYMumhLDwhCd9JzE7UF21SIqHJnkpvRRC68ZRkvoK1VVAz0gn5sJPOL4nIYKRrn6EQ
+}

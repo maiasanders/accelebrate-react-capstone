@@ -1,0 +1,31 @@
+meta {
+  name: Update Users dfferent account - FAILS
+  type: http
+  seq: 6
+}
+
+put {
+  url: localhost:8180/api/users/3
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZSIsInVzZXJuYW1lIjoibWUiLCJyb2xlcyI6IlJPTEVfVVNFUiIsInNjb3BlIjoiUk9MRV9VU0VSIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XX0.L149W9uWKBUeQBi0CEGlYyNTIWTqKROQXw4lYZie-pHk0XDOtWcY_jQvjhF60Htb--o7OYCS3aPOrj3vL_FdVFNSZXg9wmiIS9KJr-UZGbSQP0s9NSZWkrTcDoyFW7hEfdkKw56FM4iPxQdeoxJOweHOFEoP1gXgijbP8c2xir_-RHW9lEkv9kNQjgFd65CigBvjc6ijcTIMQt57svncloMsWKU-9BDETI8NTx5r6LKsO4xkh-IWuno-2z1-mUFx6liTxl7tFmFHjpPFcdH3MYMumhLDwhCd9JzE7UF21SIqHJnkpvRRC68ZRkvoK1VVAz0gn5sJPOL4nIYKRrn6EQ
+}
+
+body:json {
+  {
+          "username": "admin",
+          "password": "$2a$12$sPUi2kLGlu.YcCV9cfnE.uzJiPOR/G1sRHZcwV3agV9ScZReaY3VO",
+          "first": "Test",
+          "last": "User",
+          "phone": "(555) 853-1039",
+          "email": "testUser@daam.com",
+          "imageUrl": "https://minimaltoolkit.com/images/randomdata/female/7.jpg",
+          "pan": "4332-1234-1234-1234",
+          "expiryMonth": 6,
+          "expiryYear": 2025,
+          "roles": "USER"
+      }
+}
