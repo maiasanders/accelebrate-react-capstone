@@ -103,6 +103,12 @@ button {
     background-color: var(--color-tea-green-400);
     border-color: var(--color-tea-green-200);
   }
+
+  &:disabled {
+    background-color: var(--color-tea-green-700);
+    border-color: var(--color-tea-green-800);
+    cursor: not-allowed;
+  }
 }
 
 button:focus,

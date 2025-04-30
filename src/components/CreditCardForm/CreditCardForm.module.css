@@ -6,3 +6,15 @@
 #expiryYear {
     width: 2rem;
 }
+
+#warning {
+    background-color: red;
+}
+
+#checkoutForm {
+    width: 40rem;
+}
+
+/* #checkoutForm label:first-child {
+    margin-right: auto;
+} */
